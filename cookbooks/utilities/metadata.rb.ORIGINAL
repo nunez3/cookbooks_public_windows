@@ -6,7 +6,6 @@ long_description IO.read(File.join(File.dirname(__FILE__), 'README.rdoc'))
 version          "0.3.3"
 
 recipe "utilities::default", "Not yet implemented"
-recipe "utilities::cheftutorial.rb", "Chef Tutorial"
 recipe "utilities::change_admin_password", "Changes the administrator password"
 recipe "utilities::system_reboot", "Reboots the system"
 recipe "utilities::system_shutdown", "Shuts down the system"
@@ -20,12 +19,6 @@ attribute "utilities/admin_password",
   :display_name => "New administrator password",
   :description => "New administrator password",
   :recipes => ["utilities::change_admin_password", "utilities::create_scheduled_task"],
-  :required => "required"
-
-attribute "utilities/MYNAME",
-  :display_name => "Please enter your name",
-  :description => "This is your name",
-  :recipes => ["utilities::cheftutorial"],
   :required => "required"
 
 attribute "schtasks/command",

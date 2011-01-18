@@ -8,7 +8,6 @@
     "utilities::default": "Not yet implemented",
     "utilities::create_scheduled_task": "Creates the 'rs_scheduled_task' scheduled task under the 'administrator' user. Uses the SCHTASKS Windows command",
     "utilities::change_admin_password": "Changes the administrator password",
-    "utilities::cheftutorial": "Chef Tutorial",
     "utilities::system_shutdown": "Shuts down the system"
   },
   "conflicting": {
@@ -38,22 +37,7 @@
       ],
       "description": "Valid values are 'public' (default) or 'private'",
       "display_name": "Type of address to register"
-    
-  },
-  "utilities/MYNAME": {
-    "required": "required",
-      "calculated": false,
-      "choice": [
-
-      ],
-      "type": "string",
-      "recipes": [
-        "utilities::cheftutorial"
-      ],
-      "display_name": "Please enter your name",
-      "description": "This is your name"
-
-  },
+    },
     "dns\/password": {
       "required": "required",
       "calculated": false,
